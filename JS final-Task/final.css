@@ -1,0 +1,128 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+.head1{
+    border:2px solid sandybrown;
+    height:60px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:black;
+    padding:0 20px;
+}
+body{
+    background-color: black;
+}
+.head1 h1{
+    color:white;
+}
+
+.searchpart{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.search{
+    height:30px;
+    width:200px;
+}
+
+.btn1{
+    position: relative;
+    height:30px;
+    width:80px;
+    right:10px;
+}
+.sortbut{
+    height:30px;
+    width:120px;
+}
+.sortbut1{
+    height:30px;
+    width:120px;
+}
+.category{
+    height:30px;
+    width:120px;
+}
+.api{
+    background-color: aliceblue;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+}
+
+.api > div{
+    width:250px;
+    height:380px;
+    border:2px solid sandybrown;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px;
+    text-align:center;
+}
+
+.api img{
+    width:150px;
+    height:150px;
+    object-fit:contain;
+}
+
+
+.api > div:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 10px sandybrown;
+    transition:0.3s;
+}
+   
+@media (max-width: 600px){
+
+    .head1{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        height: auto;
+        padding: 10px;
+    }
+
+    .head1 h1{
+        font-size: 20px;
+    }
+
+    .searchpart{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .search{
+        width: 100%;
+    }
+
+    .searchpart button,
+    .searchpart select{
+        width: 100%;
+        height: 35px;
+    }
+
+    .api{
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .api div{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
